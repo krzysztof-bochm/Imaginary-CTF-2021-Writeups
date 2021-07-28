@@ -12,9 +12,9 @@ Special shoutout to :rooRobin: and :rooOreos:, who have nothing to do with this 
 ## Attached files
 
 - [roolang.zip](https://imaginaryctf.org/r/82D9-roolang.zip)
-- [disassembler.py]
-- [disassembly.asm]
-- [program.c]
+- [disassembler.py](https://github.com/krzysztof-bochm/Imaginary-CTF-2021-Writeups/blob/main/disassembler.py)
+- [disassembly.asm](https://github.com/krzysztof-bochm/Imaginary-CTF-2021-Writeups/blob/main/disassembly.asm)
+- [program.c](https://github.com/krzysztof-bochm/Imaginary-CTF-2021-Writeups/blob/main/program.c)
 
 ## Summary
 
