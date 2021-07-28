@@ -82,7 +82,7 @@ def run(prog):
 
 each opcode is contained in separate function. I will list them bellow ( not all of them are used in the program ), I am not expecting you to read all of them
 ```
-robin - loads immediate value onto the stack
+robin - pushes immediate value or register onto the stack
 rboin - pops value from stack, discarding it
 riobn - adds two numbers on top of the stack, pushes result onto the stack
 rooon - substracts two numbers on top of the stack, pushes result onto the stack
