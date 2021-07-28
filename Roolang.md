@@ -107,7 +107,7 @@ Knowing what each opcode does we could now rewrite the program in C ( because I 
 
 We can achieve it by removing any flow control and stack manipulations from instructions, and making all instructions print what they are doing, for example
 ```
-def robin():            # loads immediate value ento the stack
+def robin():            # loads immediate value onto the stack
     global insn_pointer
     insn_pointer += 1
     toPush = c_insn()
