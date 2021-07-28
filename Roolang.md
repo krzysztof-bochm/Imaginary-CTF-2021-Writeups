@@ -103,7 +103,7 @@ rbion - jumps to the label if top of the stack is not zero
 ribbn - returns from subroutine
 roiin - calls subroutine
 ```
-Knowing what each opcode does we could now rewrite the program in C ( because I am more comfortable with it than with python ) and try making sense of it. However all opcode names are a bit confusing and I have no idea how immediate values are encoded, to make it easier we will modify CPU's code to write human readable disassembly of our program.
+Knowing what each opcode does we could now rewrite the program in C ( because I am more comfortable with it than with python ) and try making sense of it. However all opcode names are a bit confusing, to make it easier we will modify CPU's code to write human readable disassembly of our program.
 
 We can achieve it by removing any flow control and stack manipulations from instructions, and making all instructions print what they are doing, for example
 ```
