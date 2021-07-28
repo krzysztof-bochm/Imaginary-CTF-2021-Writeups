@@ -93,7 +93,7 @@ which would accept different passwords too, but I will simplify it to
 ``` 'ju5tn' + 'EvEEvE' * N + 'rl05E' ```
 
 Now we need to somehow get into admin's menu while not being an admin.
-It can be achived thanks to a race condition existing when checking the password.
+It can be achieved thanks to a race condition existing when checking the password.
 
 ```
 def login():
@@ -120,10 +120,10 @@ def checkPass(pwd):
 
 We can see that password is checked on another thread, and thread displaying menus is just waiting 2 seconds to make sure password is already checked. 
 We will exploit that by sending a password that takes long time to get verified, but also is wrong. 
-This way the main thread has enough time to display admin's menu for us while password checking thread loggs us out.
+This way the main thread has enough time to display admin's menu for us while password checking thread logs us out.
 We now have access to admin commands while not being admin.
 
-All of this can be achived by modifying our script:
+All of this can be achieved by modifying our script:
 ```
 ...
 p.status("Getting money")
@@ -149,35 +149,7 @@ io.sendline('3')
 io.interactive()
 ```
 
-We need to send ``` EvEEvE ``` to the server 16 times for the password to need 2 seconds to get checked, this number will varry depending on system performance.
+We need to send ``` EvEEvE ``` to the server 16 times for the password to need 2 seconds to get checked, this number will vary depending on system performance.
 To fail password checking we send ``` Rl05E ``` with **capital** R at the end of the password.
 
 Now we just can wait for password checking thread to log us out and acquire the flag.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
