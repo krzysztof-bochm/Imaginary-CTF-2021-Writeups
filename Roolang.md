@@ -276,3 +276,4 @@ void lab5() {
 ```
 
 When we run the program with optimized ```lab5``` function we get our flag immediately.
+:rooYay:!
