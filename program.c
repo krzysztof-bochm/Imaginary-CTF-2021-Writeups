@@ -5,10 +5,12 @@
 int64_t* stack_ptr;
 
 void push(int64_t a) {
+	// note that in any real appilcation overflow check is MANDATORY here
 	*stack_ptr++ = a;
 }
 
  int64_t pop() {
+	// underflow check
 	return *--stack_ptr;
 }
 
