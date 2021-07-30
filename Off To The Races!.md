@@ -1,7 +1,6 @@
 # ImaginaryCTF 2021: Off To The Races!
 
 ![date](https://img.shields.io/badge/date-28.07.2021-brightgreen.svg)  ![solved in time of CTF](https://img.shields.io/badge/solved-in%20time%20of%20CTF-brightgreen.svg) 
-
 ![misc category](https://img.shields.io/badge/category-misc-lightgrey.svg) ![score](https://img.shields.io/badge/score-275-blue.svg) ![solves](https://img.shields.io/badge/solves-39-brightgreen.svg)
 
 ## Description
