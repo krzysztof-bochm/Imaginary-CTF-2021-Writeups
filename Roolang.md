@@ -1,7 +1,7 @@
 # ImaginaryCTF 2021: Roolang
 
 ![date](https://img.shields.io/badge/date-28.07.2021-brightgreen.svg)  ![solved in time of CTF](https://img.shields.io/badge/solved-in%20time%20of%20CTF-brightgreen.svg) 
-![reversing category](https://img.shields.io/badge/category-reversing-lightgrey.svg) ![score](https://img.shields.io/badge/score-400-blue.svg) 
+![reversing category](https://img.shields.io/badge/category-reversing-lightgrey.svg) ![score](https://img.shields.io/badge/score-400-blue.svg) ![solves](https://img.shields.io/badge/solves-24-brightgreen.svg)
 
 ## Description
 
