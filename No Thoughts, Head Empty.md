@@ -58,7 +58,7 @@ line 17 char 20
 ```
 
 ## Another solution
-We need to find part of code that multiplies the number of characters and delete it. This solution is probably the intended one, but due to the existence of above solution, it is unnecessarily *complicated*.
+We need to find part of code that multiplies the number of characters and delete it. This solution is probably the intended one, but due to the existence of above solution, it is unnecessarily *complicated*. And unless I knew that the flag was already in memory I would not extract printing loop from the code.
 
 We can extract the final loop from the code
 ```
