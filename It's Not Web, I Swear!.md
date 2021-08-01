@@ -58,7 +58,7 @@ Just after being calculated it is passed to **check_len** function, which return
    0x401070 <check_len+13>    setbe  al
    0x401073 <check_len+16>    movzx  eax, al
 ```
-it only checks if the least significant bit has value less than 100 ! They have even put it in another function to make it harder to spot!
+it only checks if the least significant byte has value less than 100 ! They have even put it in another function to make it harder to spot!
 
 When the function returns true, our path is copied onto the stack using full 32-bit path length. 
 ```
