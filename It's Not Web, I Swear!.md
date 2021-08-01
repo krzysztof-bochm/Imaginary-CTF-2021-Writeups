@@ -198,3 +198,5 @@ nc -lp 1337
 After our shellcode gets executed we will have shell in our netcat window.
 The only thing that is left to do is to put public ip into our code, make sure that the port is correctly forwarded, and send our exploit to challenge's server.
 You can then use ls and cat to acquire the flag.
+
+You can also put a write syscall after dup2 syscalls to make it more obvious that our shellcode has connected to our netcat server. But I will leave that part to the reader. When trying to do that remember that there is not much stack left for the shellcode.
