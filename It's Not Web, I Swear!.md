@@ -202,7 +202,7 @@ s = listen(1337)
 c = s.wait_for_connection()
 c.interactive()
 ```
-Just remember to put **listen** before sending line to challenge's server and to **wait for sonnection** at the end of your sploit file.
+Just remember to put **listen** before sending line to challenge's server and to **wait for connection** at the end of your sploit file.
 
 After our shellcode gets executed we will have shell.
 The only thing that is left to do is to put public ip into our code, make sure that the port is correctly forwarded, and send our exploit to challenge's server.
