@@ -8,7 +8,7 @@
 In the spirit of DEFCON, I present you with this challenge that is not a web challenge! Go forth and pwn this notweb challenge
 
 ## Attached files
-- [server](https://imaginaryctf.org/r/0AEB-server)
+- [server](https://github.com/krzysztof-bochm/Imaginary-CTF-2021-Writeups/blob/main/server)
 
 ## Summary
 To acquire the flag we had to find buffer overflow to override return pointer of a function to jump into our shellcode. However when our code is being executed we would already have been disconnected from the server, therefor we needed to reestablish the connection.
