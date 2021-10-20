@@ -9,7 +9,7 @@ They say that gambling leads to regrets, but we'll see. This online portal lets 
 
 ## Attached files
 
-- [races.py](https://imaginaryctf.org/r/D1DB-races.py)
+- [races.py](https://github.com/krzysztof-bochm/Imaginary-CTF-2021-Writeups/blob/main/races.py)
 
 ## Summary
 
